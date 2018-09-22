@@ -2,12 +2,14 @@
 
 namespace db {
 
+template<class T>
 class IDBDriver
 {
 public:
-    virtual bool connect() = 0;
+    virtual bool connect(std::string pathToDb) = 0;
     virtual void disconnect() = 0;
-    virtual bool storeResult(const int res) const = 0;
+
+    virtual bool storeResult(const std::vector<T>& res) const = 0;
 };
 
 } // namespace db
