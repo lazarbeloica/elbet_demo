@@ -3,6 +3,8 @@
 
 #include "ISortAlgorithm.h"
 #include "quickSortAlgorithm.h"
+#include "../../common/configuration.h"
+
 
 #include <string>
 
@@ -19,8 +21,8 @@ public:
     template<class T>
     ISortAlgorithm<T>* getAlgorithm(std::string name) {
 
-       if (name == "quick_sort") {
-               return new QuickSortAlgorithm<T>();
+       if (name == QUICKSORT_ALGORITHM) {
+            return new QuickSortAlgorithm<T>();
        }
 
        return nullptr;

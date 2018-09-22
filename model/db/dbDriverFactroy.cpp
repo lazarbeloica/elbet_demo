@@ -11,15 +11,6 @@ DBDriverFactory* DBDriverFactory::getInstance() {
     }
 
     return instance;
-}
-
-IDBDriver* DBDriverFactory::getDB(std::string name) {
-
-    if (name == "sqllite") {
-        return nullptr;
-    }
-
-    return nullptr;
 };
 
 } // namespace db

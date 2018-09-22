@@ -2,6 +2,7 @@
 
 #include "IDBDriver.h"
 #include "../../common/logger.h"
+#include "../../common/configuration.h"
 
 #include <iostream>
 #include <string>
@@ -11,14 +12,12 @@
 
 namespace db {
 
-const std::string RESULT_SCORE_DELIMITER = "|";
 
 template<class T>
 class SqlLiteDBDriver: public IDBDriver<T>
 {
 private:
     sqlite3 *db = nullptr;
-
 
 protected:
     virtual std::string parseResult(const std::vector<T>& res) const {
