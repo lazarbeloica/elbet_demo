@@ -1,0 +1,10 @@
+DROP TABLE game_record;
+
+CREATE TABLE game_record (
+    id            INTEGER PRIMARY KEY
+                          AUTOINCREMENT
+                          NOT NULL
+                          UNIQUE,
+    timestamp     TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    sortirani_niz STRING  NOT NULL
+);
