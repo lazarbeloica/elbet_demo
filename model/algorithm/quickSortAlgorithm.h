@@ -31,7 +31,6 @@ private:
 
         if(first < last) {
             int pivotElement = pivot(vector, first, last);
-            std::cout<< pivotElement << std::endl;
             quickSort(vector, first, pivotElement-1);
             quickSort(vector, pivotElement+1, last);
         }
