@@ -5,8 +5,8 @@
 
 #define SQLITE_DB_DRIVER "sqlite"
 
-const std::string DB_PATH = "../3pp/db/elbet.db";
-const std::string RESULT_SCORE_DELIMITER = "|";
+#define DB_PATH "elbet.db"
+#define RESULT_SCORE_DELIMITER "|"
 
 // algorithm
 #define SELECTED_SORT_ALGORITHM QUICKSORT_ALGORITHM

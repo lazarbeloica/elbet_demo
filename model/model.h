@@ -9,6 +9,8 @@
 #include "db/IDBDriver.h"
 #include "db/dbDriverFactroy.h"
 
+#include "../ui/IUi.h"
+
 #include "../common/configuration.h"
 #include "../common/logger.h"
 
@@ -28,12 +30,12 @@ private:
     Model(Model&) = delete;
     Model(Model&&) = delete;
 
-    Model operator=(Model&) = delete;
-    Model operator=(Model&&) = delete;
-
+    ui::IUi *ui = nullptr;
+    std::string parseResult(const std::vector<int>& res);
 public:
     Model();
     virtual ~Model();
+    void setUi(ui::IUi *);
 
     virtual void inputNumber(int) override;
 

@@ -14,8 +14,6 @@ private:
     Controller(Controller&) = delete;
     Controller(Controller&&) = delete;
 
-    Controller operator=(Controller&) = delete;
-    Controller operator=(Controller&) = delete;
 public:
 
     Controller(model::ICommander*, model::IInput*);
