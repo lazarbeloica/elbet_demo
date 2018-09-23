@@ -21,9 +21,9 @@ const int ERR_OK_BUTTON = 300;
 const int CONTINUE_BUTTON = 300;
 
 // ui
-const char* NEXT_BUTTON_LABEL = "Next";
-const char* SORT_BUTTON_LABEL = "Sort";
-const char* CONTINUE_BUTTON_LABEL = "Continue";
+const char* NEXT_BUTTON_LABEL = "Next number";
+const char* SORT_BUTTON_LABEL = "Execute sort";
+const char* CONTINUE_BUTTON_LABEL = "Continue?";
 const char* OK_BUTTON_LABEL = "OK";
 
 const char* ERR_WINDOW_LABEL = "Error";
@@ -33,7 +33,7 @@ const char* MAIN_WINDOW_LABEL = "Game";
 const char* ERR_MSG = "Invalid input";
 const char* NEWGAME_MSG = "Do you wish to start new game?";
 
-const char* INPUT_FIELD_LABEL = "Input:";
+const char* INPUT_FIELD_LABEL = "Input number:";
 const char* RESULT_LABEL = "Result:";
 
 void Ui::control_cb( GLUI_Control* control )
