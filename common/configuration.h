@@ -5,6 +5,7 @@
 
 #define SQLITE_DB_DRIVER "sqlite"
 
+const std::string DB_PATH = "../3pp/db/elbet.db";
 const std::string RESULT_SCORE_DELIMITER = "|";
 
 // algorithm
