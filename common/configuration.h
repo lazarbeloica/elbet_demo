@@ -5,7 +5,7 @@
 
 #define SQLITE_DB_DRIVER "sqlite"
 
-#define DB_PATH "elbet.db"
+#define DEFAULT_DB_PATH "/home/aviator/projects/elbet_demo/3pp/db/elbet.db"
 #define RESULT_SCORE_DELIMITER "|"
 
 // algorithm

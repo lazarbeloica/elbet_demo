@@ -21,6 +21,7 @@ test: model/algorithm/test/testQuickSort.cpp alg
 
 controller: controller/controller.h controller/controller.cpp
 	${GCC} ${OPT} -c controller/controller.cpp ${REDIRECT_BUILD}/${@}.o
+
 ui: ui/ui.cpp ui/*.h
 	${GCC} ${OPT} -c ui/ui.cpp ${OGL_FLAGS} ${REDIRECT_BUILD}/${@}.o
 
@@ -32,5 +33,5 @@ alg: model/algorithm/ISortAlgorithm.h model/algorithm/quickSortAlgorithm.h  mode
 
 db: model/db/*.h model/db/dbDriverFactroy.cpp
 	${GCC} ${OPT} -c model/db/dbDriverFactroy.cpp ${DB_FLAGS} ${REDIRECT_BUILD}/${@}.o ;\
-	`cp 3pp/db/elbet.db ${BUILD_DIR}`
+	`cp 3pp/db/elbet.db ${BUILD_DIR}/elbet.db`
 

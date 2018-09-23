@@ -10,6 +10,8 @@
 
 #include <sqlite3.h>
 
+extern std::string DB_PATH;
+
 namespace db {
 
 

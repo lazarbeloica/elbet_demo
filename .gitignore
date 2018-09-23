@@ -34,3 +34,5 @@
 # Project specific
 build/*
 3pp/db/elbet.db
+3pp/glui
+3pp/gtest/googletest-release-1.8.0/
